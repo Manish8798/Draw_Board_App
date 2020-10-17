@@ -19,27 +19,61 @@
 
         <Button
             android:id="@+id/plus"
-            android:text="SW+"
+            android:text="+"
+            android:background="@color/blue"
+            android:textStyle="bold"
             android:onClick="plus"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="50dp"
+            android:layout_height="45dp">
 
         </Button>
 
         <Button
             android:id="@+id/sub"
-            android:text="SW-"
+            android:text="-"
+            android:background="@color/blue"
+            android:textStyle="bold"
             android:onClick="sub"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="50dp"
+            android:layout_height="45dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/eraser"
+            android:text="E"
+            android:onClick="erase"
+            android:background="@color/blue"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sub"
+            android:layout_width="50dp"
+            android:layout_height="45dp">
+
+        </Button>
+
+
+
+        <Button
+            android:id="@+id/pen"
+            android:text="P"
+            android:background="@color/green"
+            android:onClick="pen"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/eraser"
+            android:layout_width="50dp"
+            android:layout_height="45dp">
 
         </Button>
 
@@ -59,14 +93,15 @@
 
         <Button
             android:id="@+id/undo"
-            android:text="Undo"
+            android:text="U"
+            android:background="@color/blue"
             android:onClick="undo"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="50dp"
+            android:layout_height="45dp">
 
         </Button>
 
